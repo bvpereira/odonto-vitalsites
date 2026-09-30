@@ -51,13 +51,7 @@
             >
           </div>
         </div>
-        <div class="hero-media">
-          <div class="hero-shape"></div>
-          <div class="placeholder hero-placeholder">
-            <span>▧</span><strong>Foto principal</strong
-            ><small>Profissional ou equipe da Vital Odontologia</small>
-          </div>
-        </div>
+        <div class="hero-media" aria-hidden="true"></div>
       </section>
       <section class="about container section" id="sobre">
         <div class="about-frame">
@@ -80,16 +74,20 @@
             Unimos acolhimento e planejamento para cuidar da sua saúde bucal em
             cada etapa.
           </p>
+          <p class="about-highlight">
+            Em Rio das Ostras, transformamos a experiência odontológica em algo
+            leve, seguro e verdadeiramente acolhedor — para você, para o seu
+            filho e para toda a família.
+          </p>
           <ul class="check-grid">
             <li>Atenção individualizada e acolhedora</li>
             <li>Foco na sua saúde e bem-estar</li>
             <li>Planejamento em cada detalhe</li>
             <li>Tratamentos pensados para você</li>
           </ul>
-          <a class="text-link" href="#jornada">Nosso cuidado ↗</a>
         </div>
       </section>
-      <section class="section pale">
+      <section class="section pale" id="diferenciais">
         <div class="container">
           <div class="section-heading">
             <span class="eyebrow">Razões para escolher</span>
@@ -101,46 +99,61 @@
           </div>
           <div class="benefit-grid">
             <article class="benefit">
-              <span class="round-icon">♡</span>
-              <h3>Avaliação com calma</h3>
+              <span class="round-icon">♙</span>
+              <h3>Avaliação sem custo</h3>
               <p>
-                Tempo para entender suas necessidades, esclarecer suas dúvidas e
-                conversar sobre o que é importante para você. Seu cuidado começa
-                com uma boa escuta.
+                Sua primeira consulta é totalmente gratuita e sem compromisso.
+                Fazemos uma análise cuidadosa do seu caso, ouvimos suas
+                necessidades e apresentamos o plano de tratamento ideal, com
+                todas as etapas explicadas de forma clara e transparente.
               </p>
             </article>
             <article class="benefit">
-              <span class="round-icon">✧</span>
-              <h3>Atendimento a partir de você</h3>
+              <span class="round-icon">☺</span>
+              <h3>Atendimento a partir de 5 anos</h3>
               <p>
-                Cada sorriso tem sua história. O planejamento considera suas
-                expectativas e sua rotina, com orientação clara sobre as
-                possibilidades de tratamento.
+                Crianças, adolescentes e adultos são atendidos com técnicas
+                específicas para cada idade e perfil emocional. Nossa equipe é
+                preparada para acolher os pequenos com paciência e leveza,
+                tornando cada visita uma experiência positiva e sem medo.
               </p>
             </article>
             <article class="benefit">
               <span class="round-icon">♧</span>
               <h3>Atendimento humanizado</h3>
               <p>
-                Proximidade e atenção fazem parte de cada consulta. Queremos que
-                você se sinta à vontade para cuidar da sua saúde bucal com
-                tranquilidade.
+                Praticamos escuta ativa, transparência absoluta e um ambiente
+                cuidadosamente preparado para que você se sinta em casa. Cada
+                paciente é único: respeitamos seu tempo, suas dúvidas e suas
+                expectativas em cada etapa do tratamento realizado.
               </p>
             </article>
             <article class="benefit">
               <span class="round-icon">⌁</span>
               <h3>Tecnologia e biossegurança</h3>
               <p>
-                Precisão no planejamento e cuidado com os detalhes. Uma
-                experiência que coloca a sua segurança e o seu conforto em
-                primeiro lugar.
+                Investimos em equipamentos modernos, materiais de alta
+                performance e protocolos rigorosos de esterilização e
+                biossegurança. O resultado são tratamentos mais precisos,
+                confortáveis, seguros e com resultados verdadeiramente
+                duradouros para você.
               </p>
             </article>
           </div>
-          <div class="highlights">
-            <div><strong>Cuidado</strong><span>EM CADA DETALHE</span></div>
-            <div><strong>Confiança</strong><span>EM CADA ETAPA</span></div>
-            <div><strong>Você</strong><span>NO CENTRO DE TUDO</span></div>
+          <div class="highlights" aria-label="Números da Vital Odontologia">
+            <div>
+              <strong class="counter" data-target="20" data-suffix="+">0</strong
+              ><span>ANOS DE ATUAÇÃO</span>
+            </div>
+            <div>
+              <strong class="counter" data-target="5000" data-suffix="+"
+                >0</strong
+              ><span>SORRISOS TRANSFORMADOS</span>
+            </div>
+            <div>
+              <strong class="counter" data-target="98" data-suffix="%">0</strong
+              ><span>PACIENTES SATISFEITOS</span>
+            </div>
           </div>
         </div>
       </section>
@@ -279,8 +292,9 @@
             <h2>Atendemos emergências<br /><em>24 horas</em></h2>
             <p>
               Dor de dente forte, trauma, fratura ou inchaço? Não espere. Entre
-              em contato para receber orientação e verificar a disponibilidade
-              de atendimento.
+              em contato conosco a qualquer hora do dia ou da noite — faremos o
+              possível para realizar o seu atendimento o mais rápido possível e
+              aliviar a sua dor.
             </p>
             <a class="button red" href="#contato">◉ Preciso de atendimento</a>
           </div>
@@ -307,15 +321,21 @@
                 <span class="round-icon">⌖</span>
                 <div>
                   <strong>Onde estamos</strong
-                  ><span>Endereço da clínica a confirmar</span>
+                  ><span
+                    >Rua Bangu, 10 · Nova Cidade · Rio das Ostras — RJ</span
+                  >
                 </div>
               </div>
               <div class="contact-line">
                 <span class="round-icon">◷</span>
                 <div>
                   <strong>Horários de atendimento</strong
-                  ><span>Horários da clínica a confirmar</span>
+                  ><span>Seg a Sex · 08h às 19h<br />Sáb · 09h às 13h</span>
                 </div>
+              </div>
+              <div class="contact-line">
+                <span class="round-icon">☎</span>
+                <div><strong>Telefone</strong><span>(22) 99999-8888</span></div>
               </div>
               <div class="actions">
                 <a class="button" href="#contato">↗ Agendar avaliação</a
@@ -330,17 +350,23 @@
             </div>
           </div>
           <div class="amenities">
-            <div><span class="round-icon">⌁</span>Wi-Fi e conforto</div>
-            <div><span class="round-icon">♡</span>Recepção acolhedora</div>
-            <div><span class="round-icon">✧</span>Atendimento próximo</div>
-            <div><span class="round-icon">♧</span>Espaço pensado para você</div>
+            <div><span class="round-icon">⌁</span>Wi-Fi cortesia</div>
+            <div><span class="round-icon">♿</span>Banheiro adaptado</div>
+            <div><span class="round-icon">▱</span>Estacionamento próximo</div>
+            <div>
+              <span class="round-icon">☕</span>Espaço de espera confortável
+            </div>
           </div>
           <div class="spaces-heading">
             <h3>Conheça nossos espaços</h3>
             <p>
-              Cada detalhe do ambiente foi pensado para receber você com
-              conforto e tranquilidade.<br />Um espaço acolhedor para cuidar da
-              sua saúde e do seu sorriso.
+              Cada detalhe do consultório foi pensado para o seu conforto e
+              tranquilidade: ambientes iluminados, decoração acolhedora e uma
+              equipe atenciosa que faz questão de receber você com um sorriso.
+              Da recepção às salas clínicas, tudo foi cuidadosamente preparado
+              para transformar a sua visita ao dentista em uma experiência leve,
+              segura e realmente humana — porque sabemos que cuidar do sorriso
+              começa por acolher a pessoa por trás dele.
             </p>
           </div>
           <div class="carousel" aria-label="Galeria dos ambientes">
@@ -383,8 +409,10 @@
                 <span class="eyebrow">Etapa 01</span>
                 <h3>Marcação da consulta</h3>
                 <p>
-                  Converse com a nossa equipe, conte o que você precisa e
-                  encontre o melhor horário para a sua avaliação.
+                  Fale conosco pelo WhatsApp e escolha o melhor dia e horário
+                  para você. Nosso atendimento é rápido, atencioso e sem
+                  burocracia — respondemos em minutos e organizamos tudo para
+                  caber na sua rotina.
                 </p>
               </div>
             </li>
@@ -392,10 +420,12 @@
               <span class="timeline-icon">⌕</span>
               <div>
                 <span class="eyebrow">Etapa 02</span>
-                <h3>Avaliação com calma</h3>
+                <h3>Avaliação sem custo</h3>
                 <p>
-                  Ouvimos suas expectativas e avaliamos sua saúde bucal. É o
-                  momento de conhecer seu sorriso e esclarecer suas dúvidas.
+                  Fazemos um diagnóstico completo do seu caso, sem compromisso.
+                  Ouvimos suas queixas, examinamos com calma e explicamos cada
+                  detalhe do que encontramos, para que você entenda exatamente o
+                  que precisa ser feito.
                 </p>
               </div>
             </li>
@@ -405,8 +435,10 @@
                 <span class="eyebrow">Etapa 03</span>
                 <h3>Plano personalizado</h3>
                 <p>
-                  Apresentamos as possibilidades de tratamento com clareza,
-                  respeitando suas necessidades, sua rotina e seus objetivos.
+                  Apresentamos o tratamento ideal, com valores e prazos claros.
+                  Você recebe todas as opções disponíveis, com prós e contras de
+                  cada uma, e decide com tranquilidade — sem pressão e com total
+                  transparência.
                 </p>
               </div>
             </li>
@@ -416,8 +448,10 @@
                 <span class="eyebrow">Etapa 04</span>
                 <h3>Tratamento realizado</h3>
                 <p>
-                  Cuidado e atenção a cada etapa, com acompanhamento próximo
-                  para que você se sinta seguro durante o tratamento.
+                  Cada etapa é executada com técnica, segurança e conforto.
+                  Usamos materiais de alta qualidade, protocolos rigorosos de
+                  biossegurança e acompanhamos você de perto para que tudo
+                  aconteça no seu tempo.
                 </p>
               </div>
             </li>
@@ -427,8 +461,10 @@
                 <span class="eyebrow">Etapa 05</span>
                 <h3>Sorriso dos sonhos</h3>
                 <p>
-                  O cuidado continua depois do tratamento, com orientação
-                  preventiva e acompanhamento da saúde do seu sorriso.
+                  Você conquista o resultado que sempre desejou — para toda a
+                  vida. Além do sorriso pronto, entregamos orientações de
+                  manutenção e um acompanhamento contínuo para preservar cada
+                  conquista alcançada.
                 </p>
               </div>
             </li>
@@ -440,13 +476,14 @@
           <span class="eyebrow">Facilidades para você</span>
           <h2>Atendimento<br />particular e convênios</h2>
           <p>
-            Possibilidades de atendimento para você cuidar da saúde bucal com
-            tranquilidade. Consulte nossa equipe sobre os convênios e condições
-            disponíveis.
+            Trabalhamos com atendimento particular flexível, com condições
+            especiais de pagamento, e também aceitamos os principais convênios
+            odontológicos. Consulte-nos para verificar a disponibilidade do seu
+            plano.
           </p>
-          <a class="text-link" href="#contato"
-            >Consultar convênios aceitos ↗</a
-          >
+          <div class="payment-badge">
+            <span aria-hidden="true">▣</span> Parcelamento facilitado no cartão
+          </div>
         </div>
         <div class="insurance-grid" aria-label="Espaços para os convênios">
           <div>Logo do convênio 01</div>
@@ -463,8 +500,14 @@
             <span class="eyebrow">Sorrisos que inspiram</span>
             <h2>Arraste e veja o antes e depois</h2>
             <p>
-              Transformações que contam histórias. Arraste o controle para
-              comparar as duas imagens de cada tratamento.
+              Transformações que devolvem função, estética e autoestima aos
+              nossos pacientes em cada etapa concluída no consultório. Deslize a
+              alça de cada card para comparar o ponto de partida com o resultado
+              final e veja como pequenos ajustes fazem uma diferença enorme na
+              harmonia do sorriso, na mordida e na forma como você se enxerga.
+              Cada caso é único, planejado com técnica, sensibilidade e muito
+              cuidado — para que o depois seja sempre motivo de orgulho e um
+              novo começo.
             </p>
           </div>
           <div class="results-grid">
@@ -576,56 +619,75 @@
         <div class="reviews-grid">
           <article class="review">
             <span class="quote">“</span>
-            <p>
-              Espaço reservado para um depoimento real de paciente da Vital
-              Odontologia.
+            <p
+              class="typewriter"
+              data-text="Eu tinha muito medo de dentista, mas desde a primeira conversa fui acolhida com calma e respeito. O tratamento foi explicado passo a passo e hoje voltei a sorrir sem vergonha."
+            >
+              Eu tinha muito medo de dentista, mas desde a primeira conversa fui
+              acolhida com calma e respeito. O tratamento foi explicado passo a
+              passo e hoje voltei a sorrir sem vergonha.
             </p>
             <div class="review-person">
               <span class="avatar">▧</span>
               <div>
-                <strong>Nome do paciente</strong
-                ><span>Depoimento a inserir</span>
+                <strong>Mariana Alves</strong><span>Rio das Ostras / RJ</span>
               </div>
             </div>
           </article>
           <article class="review">
             <span class="quote">“</span>
-            <p>
-              Espaço reservado para um depoimento real de paciente da Vital
-              Odontologia.
+            <p
+              class="typewriter"
+              data-text="Fiz meu implante na Vital e me senti seguro em todas as etapas. A equipe foi transparente, cuidadosa e o resultado ficou muito natural. Recomendo de olhos fechados."
+            >
+              Fiz meu implante na Vital e me senti seguro em todas as etapas. A
+              equipe foi transparente, cuidadosa e o resultado ficou muito
+              natural. Recomendo de olhos fechados.
             </p>
             <div class="review-person">
               <span class="avatar">▧</span>
               <div>
-                <strong>Nome do paciente</strong
-                ><span>Depoimento a inserir</span>
+                <strong>Ricardo Menezes</strong><span>Rio das Ostras / RJ</span>
               </div>
             </div>
           </article>
           <article class="review">
             <span class="quote">“</span>
-            <p>
-              Espaço reservado para um depoimento real de paciente da Vital
-              Odontologia.
+            <p
+              class="typewriter"
+              data-text="Minha filha foi atendida com muita paciência e carinho. Ela saiu tranquila, entendendo como cuidar melhor dos dentes e já perguntando quando seria a próxima consulta."
+            >
+              Minha filha foi atendida com muita paciência e carinho. Ela saiu
+              tranquila, entendendo como cuidar melhor dos dentes e já
+              perguntando quando seria a próxima consulta.
             </p>
             <div class="review-person">
               <span class="avatar">▧</span>
               <div>
-                <strong>Nome do paciente</strong
-                ><span>Depoimento a inserir</span>
+                <strong>Juliana Ferreira</strong
+                ><span>Rio das Ostras / RJ</span>
               </div>
             </div>
           </article>
         </div>
+        <p class="demo-note">
+          Depoimentos ilustrativos para composição. Substitua por relatos reais
+          antes da publicação definitiva.
+        </p>
       </section>
       <section class="section dark contact" id="contato">
         <div class="container">
           <span class="eyebrow">Seu novo sorriso começa aqui</span>
           <h2>Pronto para começar seu novo<br />sorriso?</h2>
           <p>
-            Agende sua avaliação e descubra como podemos cuidar de você. Na
-            Vital Odontologia, cada tratamento começa com uma conversa, uma
-            escuta atenta e um plano pensado para o seu sorriso.
+            Agende sua avaliação gratuita agora mesmo pelos nossos canais —
+            respondemos em minutos, com atenção e sem compromisso, para tirar
+            todas as suas dúvidas e organizar o melhor horário para você. E se
+            quiser conhecer melhor o nosso trabalho antes disso, siga o nosso
+            Instagram para acompanhar o dia a dia da clínica, transformações
+            reais de pacientes, bastidores da equipe e dicas práticas de saúde
+            bucal, higiene e cuidado com o sorriso — conteúdo pensado para você
+            cuidar cada vez melhor da sua saúde e da sua família.
           </p>
           <div class="actions">
             <button class="button bright" data-contact="whatsapp">
@@ -644,52 +706,55 @@
         <details>
           <summary>A primeira avaliação é realmente gratuita?</summary>
           <p>
-            Entre em contato com a equipe para confirmar as condições da
-            primeira avaliação e a disponibilidade de horários.
+            Sim. A consulta de avaliação é 100% gratuita e sem compromisso.
+            Fazemos um diagnóstico completo e apresentamos o plano de tratamento
+            ideal para o seu caso.
           </p>
         </details>
         <details>
           <summary>A partir de que idade vocês atendem crianças?</summary>
           <p>
-            Fale com a nossa equipe e informe a idade da criança para receber
-            orientação sobre o atendimento indicado.
+            Atendemos crianças a partir dos 5 anos, com abordagem lúdica e
+            acolhedora, para que a criança se sinta segura desde o primeiro
+            contato.
           </p>
         </details>
         <details>
           <summary>Quais especialidades vocês oferecem?</summary>
           <p>
-            Implantodontia, ortodontia e clínica geral. Na avaliação,
-            identificamos suas necessidades e conversamos sobre as opções de
-            tratamento.
+            Somos especializados em Implantodontia, Ortodontia (aparelhos fixos
+            e alinhadores) e Clínica Geral, cobrindo prevenção, restaurações e
+            tratamentos essenciais.
           </p>
         </details>
         <details>
           <summary>Vocês trabalham com quais convênios?</summary>
           <p>
-            A lista de convênios será disponibilizada em breve. Confirme a
-            cobertura do seu plano com a equipe antes de agendar.
+            Sim, aceitamos os principais convênios. Consulte-nos pelo WhatsApp
+            para verificar se o seu plano está entre os atendidos.
           </p>
         </details>
         <details>
           <summary>Como funciona o parcelamento do tratamento?</summary>
           <p>
-            As condições de pagamento são apresentadas junto ao planejamento, de
-            acordo com o tratamento indicado para você.
+            Oferecemos condições facilitadas de pagamento no cartão de crédito.
+            O parcelamento é personalizado de acordo com o tratamento escolhido.
           </p>
         </details>
         <details>
           <summary>Quanto tempo dura um tratamento com implantes?</summary>
           <p>
-            O prazo depende da avaliação, da saúde bucal e da necessidade de
-            procedimentos complementares. O planejamento individual define as
-            etapas previstas.
+            Varia conforme cada caso. Em geral, o processo completo leva de 3 a
+            6 meses, considerando cicatrização óssea e instalação da prótese
+            definitiva.
           </p>
         </details>
         <details>
           <summary>Onde fica o consultório?</summary>
           <p>
-            O endereço completo e o mapa da Vital Odontologia serão adicionados
-            em breve.
+            Estamos localizados em Rio das Ostras — RJ, em um ponto de fácil
+            acesso. Você encontra o endereço completo e as rotas na seção “Nosso
+            Consultório”.
           </p>
         </details>
       </section>
@@ -711,9 +776,9 @@
         </div>
         <div>
           <h3>Contato</h3>
-          <p>Telefone a confirmar</p>
-          <p>Endereço a confirmar</p>
-          <p>Horários a confirmar</p>
+          <p>(22) 99999-8888</p>
+          <p>Rua Bangu, 10 · Nova Cidade<br />Rio das Ostras — RJ</p>
+          <p>Seg a Sex · 08h às 19h<br />Sáb · 09h às 13h</p>
         </div>
         <nav aria-label="Links do rodapé">
           <h3>Links</h3>

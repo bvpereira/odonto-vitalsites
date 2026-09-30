@@ -23,7 +23,8 @@ Projeto estático: preset Other, sem comando de build, diretório de saída na r
 - Fotos principal, atendimento, especialidades, emergência e ambientes.
 - Três pares de fotos antes/depois e respectivos títulos.
 - Logos dos convênios e depoimentos reais.
-- Telefone/WhatsApp, Instagram, endereço, mapa e horários.
+- Confirmar se o telefone informado também será usado no WhatsApp e fornecer o perfil do Instagram.
+- Substituir o telefone de demonstração `(22) 99999-8888` pelo número definitivo, se necessário.
 - Confirmar estatísticas da referência antes de substituir os destaques textuais.
 
 Os textos detalhados das especialidades foram transcritos das imagens fornecidas. O atendimento de emergência 24 horas foi mantido da referência. Textos menores não legíveis foram adaptados à Vital Odontologia.
