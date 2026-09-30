@@ -8,6 +8,7 @@
   --dark: #030b10;
   --serif: "Playfair Display", Georgia, serif;
   --sans: "DM Sans", sans-serif;
+  --hero-header-height: 130px;
 }
 * {
   box-sizing: border-box;
@@ -145,7 +146,9 @@ input:focus-visible {
   margin-bottom: 18px;
 }
 .header {
-  height: 130px;
+  position: relative;
+  z-index: 2;
+  height: var(--hero-header-height);
   display: flex;
   align-items: center;
 }
@@ -169,8 +172,10 @@ input:focus-visible {
   grid-template-columns: 1fr 1fr;
   gap: 58px;
   align-items: center;
-  min-height: 520px;
-  padding: 28px max(24px, calc((100% - 1100px) / 2)) 55px;
+  min-height: calc(520px + var(--hero-header-height));
+  margin-top: calc(-1 * var(--hero-header-height));
+  padding: calc(28px + var(--hero-header-height))
+    max(24px, calc((100% - 1100px) / 2)) 55px;
   background-image: url("../images/plano-fundo-hero.jpg");
   background-position: center;
   background-size: cover;
@@ -1003,14 +1008,14 @@ details[open] summary i {
   margin-top: 18px;
 }
 .avatar {
-  background: #eef4f6;
-  display: grid;
-  place-items: center;
-  border: 1px dashed #bacdd6;
-  width: 35px;
-  height: 35px;
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  color: #94a8b2;
+  border: 2px solid #d9f2f8;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 4px 12px #075a7618;
 }
 .review-person strong {
   display: block;
@@ -1201,11 +1206,14 @@ dialog p {
   padding-right: 25px;
 }
 @media (min-width: 1600px) {
+  :root {
+    --hero-header-height: 158px;
+  }
   .header {
-    height: 158px;
+    height: var(--hero-header-height);
   }
   .hero {
-    min-height: 540px;
+    min-height: calc(540px + var(--hero-header-height));
   }
   .hero-media {
     height: 540px;
@@ -1230,6 +1238,9 @@ dialog p {
   }
 }
 @media (max-width: 900px) {
+  :root {
+    --hero-header-height: 105px;
+  }
   .container {
     width: calc(100% - 40px);
   }
@@ -1240,7 +1251,7 @@ dialog p {
     font-size: 30px;
   }
   .header {
-    height: 105px;
+    height: var(--hero-header-height);
   }
   .brand {
     margin-left: 65px;
@@ -1323,6 +1334,9 @@ dialog p {
   }
 }
 @media (max-width: 640px) {
+  :root {
+    --hero-header-height: 120px;
+  }
   .container {
     width: calc(100% - 40px);
   }
@@ -1341,7 +1355,7 @@ dialog p {
     display: none;
   }
   .header {
-    height: 120px;
+    height: var(--hero-header-height);
     justify-content: center;
   }
   .brand {
@@ -1353,8 +1367,8 @@ dialog p {
     width: 100%;
     grid-template-columns: 1fr;
     gap: 25px;
-    min-height: 790px;
-    padding: 22px 20px 25px;
+    min-height: calc(790px + var(--hero-header-height));
+    padding: calc(22px + var(--hero-header-height)) 20px 25px;
     background-image:
       linear-gradient(
         to bottom,
