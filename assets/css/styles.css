@@ -212,7 +212,6 @@ input:focus-visible {
     transform 0.2s;
 }
 .hero .button:first-child,
-.specialty-nav a,
 .bright {
   background: linear-gradient(110deg, #006fa7, #08c4e8, #006fa7);
   background-size: 220% auto;
@@ -220,7 +219,6 @@ input:focus-visible {
   color: #fff;
 }
 .hero .button:first-child:hover,
-.specialty-nav a:hover,
 .bright:hover {
   filter: saturate(1.15) brightness(0.96);
 }
@@ -441,8 +439,9 @@ input:focus-visible {
 .highlights strong {
   display: block;
   color: var(--cyan);
-  font: 52px/1.2 var(--serif);
-  font-variant-numeric: tabular-nums;
+  font: 700 52px/1.1 var(--serif);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "lnum" 1, "tnum" 1;
 }
 .highlights span {
   font-size: 10px;
@@ -462,7 +461,35 @@ input:focus-visible {
   text-align: center;
   padding: 11px 18px;
   border-radius: 20px;
-  box-shadow: 0 6px 16px #007ca526;
+  border: 1px solid #d7e2e6;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 5px 14px #0b506b10;
+  transition:
+    transform 0.2s,
+    filter 0.2s;
+}
+.specialty-nav a.is-active {
+  background: linear-gradient(110deg, #006fa7, #08c4e8, #006fa7);
+  background-size: 220% auto;
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 8px 20px #007ca536;
+  transform: translateY(-2px);
+}
+.specialty-nav:hover a {
+  background: #fff;
+  color: var(--ink);
+  border-color: #d7e2e6;
+  box-shadow: 0 5px 14px #0b506b10;
+}
+.specialty-nav:hover a:hover {
+  background: linear-gradient(110deg, #006fa7, #08c4e8, #006fa7);
+  background-size: 220% auto;
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 8px 20px #007ca536;
+  transform: translateY(-2px);
 }
 .specialty-grid {
   display: grid;
@@ -479,8 +506,16 @@ input:focus-visible {
 }
 .specialty-intro {
   text-align: center;
-  min-height: 214px;
+  min-height: 236px;
   padding: 23px 20px 26px;
+}
+.specialty-intro .round-icon {
+  width: 61px;
+  height: 61px;
+}
+.specialty-intro .round-icon img {
+  width: 36px;
+  height: 36px;
 }
 .specialty-intro h3 {
   font-size: 26px;
@@ -1024,12 +1059,6 @@ details[open] summary i {
 .review-person div span {
   font-size: 11px;
   color: #8a969e;
-}
-.demo-note {
-  margin-top: 22px;
-  text-align: center;
-  font-size: 12px;
-  color: #89979e;
 }
 .contact {
   text-align: center;
@@ -1621,7 +1650,6 @@ dialog p {
   }
   .hero h1 em,
   .hero .button:first-child,
-  .specialty-nav a,
   .bright {
     animation-duration: 9s;
   }

@@ -121,7 +121,20 @@ document.querySelectorAll(".comparison").forEach((comparison) => {
   );
 });
 
-document.querySelectorAll(".specialty-nav a").forEach((link) => {
+const specialtyLinks = [...document.querySelectorAll(".specialty-nav a")];
+let activeSpecialty = 0;
+const highlightSpecialty = () => {
+  specialtyLinks.forEach((link, index) =>
+    link.classList.toggle("is-active", index === activeSpecialty),
+  );
+};
+highlightSpecialty();
+window.setInterval(() => {
+  activeSpecialty = (activeSpecialty + 1) % specialtyLinks.length;
+  highlightSpecialty();
+}, 3000);
+
+specialtyLinks.forEach((link) => {
   link.addEventListener("click", () => {
     document.querySelector(`${link.getAttribute("href")} details`).open = true;
   });
