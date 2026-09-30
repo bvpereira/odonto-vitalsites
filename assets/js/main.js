@@ -78,14 +78,6 @@ const track = carousel.querySelector(".carousel-track");
 const duplicate = track.querySelector(".gallery-group").cloneNode(true);
 duplicate.setAttribute("aria-hidden", "true");
 track.append(duplicate);
-const carouselControl = document.querySelector(".carousel-control");
-carouselControl.addEventListener("click", () => {
-  const paused = carousel.classList.toggle("is-paused");
-  carouselControl.setAttribute("aria-pressed", String(paused));
-  carouselControl.textContent = paused
-    ? "Continuar carrossel ▷"
-    : "Pausar carrossel Ⅱ";
-});
 
 // O range permite uso por teclado; pointer events permitem arrastar em toda a foto.
 document.querySelectorAll(".comparison").forEach((comparison) => {
