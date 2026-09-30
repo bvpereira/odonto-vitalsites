@@ -7,6 +7,7 @@ Landing page estática para `odonto.vitalsites.com.br`, baseada na referência v
 - `index.html`: seções, textos e espaços das imagens.
 - `assets/css/styles.css`: identidade visual e estilos responsivos.
 - `assets/js/main.js`: carrossel, comparadores e contatos.
+- `assets/icons/`: ícones SVG fornecidos para diferenciais, especialidades, estrutura, jornada e contatos.
 - `assets/images/logo.png`: logo original fornecida.
 - `.agents/skills/frontend-design/`: referência local de design.
 

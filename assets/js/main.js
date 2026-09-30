@@ -6,14 +6,6 @@ const clinic = {
 };
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Ícones vetoriais leves, sem biblioteca externa.
-const toothIcon =
-  '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5C9 2 4 3 4 7c0 3 2 5 2.5 8 .5 3 1 6 2.5 6 2 0 1-7 3-7s1 7 3 7c1.5 0 2-3 2.5-6C18 12 20 10 20 7c0-4-5-5-8-2Z"/><path d="M9 4c1 1 2 2 4 2"/></svg>';
-document.querySelectorAll(".round-icon").forEach((icon) => {
-  if (icon.textContent.trim() === "♧") icon.innerHTML = toothIcon;
-  icon.setAttribute("aria-hidden", "true");
-});
-
 // Contadores recomeçam alguns segundos depois de alcançar o valor final.
 const counters = document.querySelectorAll(".counter");
 const formatCounter = (value, suffix) =>
