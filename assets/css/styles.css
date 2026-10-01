@@ -1430,6 +1430,9 @@ dialog p {
   .actions {
     gap: 10px;
   }
+  .hero .actions {
+    justify-content: center;
+  }
   .button {
     min-height: 48px;
     font-size: 13px;
@@ -1440,7 +1443,11 @@ dialog p {
     gap: 38px;
   }
   .about-frame {
+    order: 2;
     margin-right: 12px;
+  }
+  .about > div:last-child {
+    order: 1;
   }
   .about-photo {
     height: 330px;
@@ -1526,7 +1533,19 @@ dialog p {
     font-size: 14px;
   }
   .emergency-media {
+    margin-top: 10px;
     margin-right: 9px;
+  }
+  .emergency .split {
+    gap: 58px;
+  }
+  .emergency h2 br {
+    display: block;
+  }
+  .emergency .button {
+    display: flex;
+    width: max-content;
+    margin: 22px auto 0;
   }
   .emergency-photo {
     height: 270px;
@@ -1544,9 +1563,15 @@ dialog p {
     height: 290px;
   }
   .amenities {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-block: 35px;
     gap: 12px;
+  }
+  .amenities > div {
+    min-height: 126px;
+    padding-inline: 8px;
+    text-align: center;
+    font-size: 13px;
   }
   .gallery-group img {
     width: 180px;
@@ -1563,11 +1588,17 @@ dialog p {
   }
   .timeline li > div,
   .timeline li:nth-child(even) > div {
-    width: calc(100% - 70px);
+    width: calc(100% - 80px);
     text-align: left;
   }
   .timeline-icon {
-    left: 0;
+    left: -4px;
+    width: 52px;
+    height: 52px;
+  }
+  .timeline-icon img {
+    width: 24px;
+    height: 24px;
   }
   .timeline h3 {
     font-size: 21px;
