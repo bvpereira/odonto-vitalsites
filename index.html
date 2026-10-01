@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <script src="assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="assets/css/styles.css?v=20261001-video" />
+    <script src="assets/js/main.js?v=20261001-video" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -375,7 +375,7 @@
               </div>
               <div class="actions">
                 <a class="button" href="#contato">↗ Agendar avaliação</a
-                ><button class="button black" data-contact="maps">
+                ><button class="button black" data-location-video>
                   ⌖ Como chegar
                 </button>
               </div>
@@ -867,6 +867,13 @@
     <a class="floating-contact" href="#contato" aria-label="Ir para contato"
       ><img src="assets/icons/whatsapp.svg" alt=""
     /></a>
+    <dialog id="location-dialog" class="location-dialog" aria-label="Vídeo de como chegar à Vital Odontologia">
+      <button class="location-close" aria-label="Fechar vídeo" autofocus>×</button>
+      <video controls playsinline preload="none">
+        <source src="assets/videos/localizacao.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeos. <a href="assets/videos/localizacao.mp4">Abrir vídeo de localização</a>.
+      </video>
+    </dialog>
     <dialog id="contact-dialog">
       <button class="dialog-close" aria-label="Fechar aviso">×</button
       ><span class="eyebrow">Vital Odontologia</span>

@@ -937,6 +937,39 @@ details[open] summary i {
   background: #c5e7ec;
   color: #3d7a88;
 }
+.location-dialog {
+  width: min(480px, calc(100vw - 24px));
+  max-width: none;
+  max-height: calc(100dvh - 24px);
+  padding: 0;
+  border: 0;
+  background: #000;
+  overflow: hidden;
+}
+.location-dialog video {
+  display: block;
+  width: 100%;
+  height: min(82dvh, 800px);
+  object-fit: contain;
+}
+.location-close {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  color: #111;
+  font-size: 30px;
+  line-height: 1;
+  box-shadow: 0 2px 12px #0005;
+}
+@media (max-width: 640px) {
+  .location-dialog { width: calc(100vw - 16px); max-height: calc(100dvh - 16px); }
+  .location-dialog video { height: calc(100dvh - 16px); }
+}
 .before .placeholder {
   background: #e3e7e9;
   color: #758590;

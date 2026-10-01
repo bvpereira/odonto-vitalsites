@@ -140,6 +140,25 @@ specialtyLinks.forEach((link) => {
   });
 });
 
+const locationDialog = document.getElementById("location-dialog");
+const locationVideo = locationDialog.querySelector("video");
+document.querySelector("[data-location-video]").addEventListener("click", () => {
+  locationDialog.showModal();
+  document.body.style.overflow = "hidden";
+  locationVideo.play().catch(() => {});
+});
+locationDialog.querySelector(".location-close").addEventListener("click", () => locationDialog.close());
+locationDialog.addEventListener("close", () => {
+  locationVideo.pause();
+  locationVideo.currentTime = 0;
+  document.body.style.overflow = "";
+});
+locationDialog.addEventListener("click", (event) => {
+  if (event.target !== locationDialog) return;
+  const bounds = locationDialog.getBoundingClientRect();
+  if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) locationDialog.close();
+});
+
 const dialog = document.getElementById("contact-dialog");
 const messages = {
   whatsapp: "O WhatsApp da Vital Odontologia será disponibilizado em breve.",
