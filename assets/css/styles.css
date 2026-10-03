@@ -1723,9 +1723,12 @@ dialog p {
 .hero .actions { justify-content: center; }
 .hero-media { display: none; }
 @media (min-width: 641px) {
+  .header .brand { width: 209px; }
+  .header .brand img { width: 209px; height: 209px; }
   .hero {
     min-height: calc((520px + var(--hero-header-height)) * 1.15);
-    align-content: center;
+    align-content: start;
+    padding-top: calc(var(--hero-header-height) + 8px);
     padding-bottom: 85px;
   }
 }
