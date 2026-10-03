@@ -1723,7 +1723,7 @@ dialog p {
 .hero .actions { justify-content: center; }
 .hero-media { display: none; }
 @media (min-width: 641px) {
-  .header .brand { width: 209px; position: relative; top: 41px; }
+  .header .brand { width: 271.7px; position: relative; top: 41px; }
   .header .brand img { width: 271.7px; height: 271.7px; max-width: none; }
   .hero {
     min-height: calc((520px + var(--hero-header-height)) * 1.15);
