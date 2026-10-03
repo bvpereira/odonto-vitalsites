@@ -1722,6 +1722,16 @@ dialog p {
 .hero p { max-width: 610px; margin-inline: auto; }
 .hero .actions { justify-content: center; }
 .hero-media { display: none; }
+@media (min-width: 641px) {
+  .hero {
+    min-height: calc((520px + var(--hero-header-height)) * 1.15);
+    align-content: center;
+    padding-bottom: 85px;
+  }
+}
+@media (min-width: 1600px) {
+  .hero { min-height: calc((540px + var(--hero-header-height)) * 1.15); }
+}
 .team-section { padding-top: 0; }
 .team-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .team-card { overflow: hidden; background: #fff; border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 10px 36px #063c4e08; }
@@ -1745,7 +1755,7 @@ dialog p {
   .team-card-body p { font-size: 16px; }
   .team-grid { grid-template-columns: 1fr; gap: 24px; }
   .team-card { max-width: 440px; width: 100%; margin-inline: auto; }
-  .hero { background-image: url("../images/hero-mobile-pastel.png"); background-size: cover; background-position: center; }
+  .hero { background-image: linear-gradient(#ffffff66, #ffffff66), url("../images/hero-mobile-pastel.png"); background-size: cover; background-position: center; }
 }
 @media (prefers-reduced-motion: reduce) {
   .header .brand img { animation: logo-pulse 6s ease-in-out infinite; }
