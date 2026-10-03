@@ -1727,9 +1727,9 @@ dialog p {
   .header .brand img { width: 209px; height: 209px; }
   .hero {
     min-height: calc((520px + var(--hero-header-height)) * 1.15);
-    align-content: start;
-    padding-top: calc(var(--hero-header-height) + 8px);
-    padding-bottom: 85px;
+    align-content: end;
+    padding-top: calc(var(--hero-header-height) + 40px);
+    padding-bottom: 100px;
   }
 }
 @media (min-width: 1600px) {
