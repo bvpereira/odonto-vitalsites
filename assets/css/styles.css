@@ -1429,7 +1429,7 @@ dialog p {
     width: 100%;
     grid-template-columns: 1fr;
     gap: 25px;
-    min-height: calc((790px + var(--hero-header-height)) * 1.1);
+    min-height: 0;
     padding: calc(22px + var(--hero-header-height)) 20px 25px;
     align-content: start;
     background-color: #fff;
