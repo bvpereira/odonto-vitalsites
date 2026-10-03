@@ -89,10 +89,10 @@ em {
     #004f86 78%,
     #006e9d 100%
   );
-  background-size: 240% auto;
+  background-size: 100% auto;
   -webkit-background-clip: text;
   background-clip: text;
-  animation: gradient-flow 4.5s linear infinite;
+  animation: none;
 }
 @keyframes gradient-flow {
   to {
@@ -1703,12 +1703,16 @@ dialog p {
     bottom: 14px;
   }
 }
+:root { --hero-header-height: 160px; }
 .header { justify-content: center; }
-.header .brand { margin-inline: 0; }
-.header .brand img { animation: logo-pulse 4s ease-in-out infinite; }
-@keyframes logo-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.035); } }
+.header .brand { margin-inline: 0; width: 190px; height: 160px; overflow: visible; }
+.header .brand img { width: 190px; height: 190px; animation: logo-pulse 3s ease-in-out infinite; }
+@keyframes logo-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.065); } }
 .hero {
   grid-template-columns: 1fr;
+  align-items: start;
+  align-content: start;
+  padding-top: calc(var(--hero-header-height) + 8px);
   text-align: center;
   background-image: url("../images/hero-banner.png");
   background-size: cover;
@@ -1723,23 +1727,28 @@ dialog p {
 .team-card { overflow: hidden; background: #fff; border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 10px 36px #063c4e08; }
 .team-card-heading { padding: 24px; text-align: center; }
 .team-card-heading h3 { font-size: 25px; margin-bottom: 6px; }
-.team-card-heading span { color: #687c85; font-size: 13px; }
+.team-card-heading span { display: inline-block; padding: 6px 12px; border-radius: 20px; background: #007da8; color: #fff; font-size: 13px; font-weight: 600; }
 .team-card > img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1.04; object-fit: cover; }
 .team-card-body { padding: 24px; }
-.team-card-body p { font-size: 16px; line-height: 1.7; }
+.team-card-body p { font-size: 15px; }
 .team-card-body ul { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 20px 0 0; }
 .team-card-body li { padding: 6px 10px; border-radius: 8px; background: var(--pale); color: #006b90; font-size: 12px; font-weight: 600; }
+.team-card-body li::before { content: "✓"; margin-right: 6px; font-weight: 700; }
 @media (max-width: 900px) {
   .team-grid { gap: 14px; }
   .team-card-heading, .team-card-body { padding: 18px; }
 }
 @media (max-width: 640px) {
+  :root { --hero-header-height: 145px; }
+  .header .brand { width: 160px; height: 145px; }
+  .header .brand img { width: 160px; height: 160px; }
+  .team-card-body p { font-size: 16px; }
   .team-grid { grid-template-columns: 1fr; gap: 24px; }
   .team-card { max-width: 440px; width: 100%; margin-inline: auto; }
   .hero { background-image: url("../images/hero-banner.png"); background-size: cover; background-position: center; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .header .brand img { animation: none; }
+  .header .brand img { animation: logo-pulse 6s ease-in-out infinite; }
   html {
     scroll-behavior: auto;
   }
