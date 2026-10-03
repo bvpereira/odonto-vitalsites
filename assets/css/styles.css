@@ -1745,7 +1745,7 @@ dialog p {
   .team-card-body p { font-size: 16px; }
   .team-grid { grid-template-columns: 1fr; gap: 24px; }
   .team-card { max-width: 440px; width: 100%; margin-inline: auto; }
-  .hero { background-image: url("../images/hero-banner.png"); background-size: cover; background-position: center; }
+  .hero { background-image: url("../images/hero-banner-mobile.png"); background-size: cover; background-position: center; }
 }
 @media (prefers-reduced-motion: reduce) {
   .header .brand img { animation: logo-pulse 6s ease-in-out infinite; }
