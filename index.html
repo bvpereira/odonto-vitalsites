@@ -15,10 +15,29 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/styles.css?v=20261003-logo-balance" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=20261019-prototype" />
     <script src="assets/js/main.js?v=20261001-video" defer></script>
   </head>
   <body>
+    <dialog id="prototype-dialog" class="prototype-dialog" aria-labelledby="prototype-title" aria-describedby="prototype-description">
+      <button type="button" class="prototype-close" aria-label="Fechar aviso de protótipo" autofocus>×</button>
+      <span class="eyebrow">Projeto de portfólio</span>
+      <h2 id="prototype-title">Este site é um protótipo</h2>
+      <p id="prototype-description">Este site foi criado exclusivamente para compor um portfólio e demonstrar recursos de design e desenvolvimento web. As informações, imagens, nomes, registros profissionais, depoimentos e resultados apresentados são fictícios e/ou utilizados apenas para fins ilustrativos. Este projeto não representa uma clínica em funcionamento nem oferece serviços odontológicos reais.</p>
+      <button type="button" class="button prototype-dismiss">Entendi, explorar o site</button>
+    </dialog>
+    <script>
+      (() => {
+        const notice = document.getElementById("prototype-dialog");
+        notice.showModal();
+        document.documentElement.style.overflow = "hidden";
+        notice.querySelectorAll("button").forEach((button) => button.addEventListener("click", () => notice.close()));
+        notice.addEventListener("close", () => {
+          document.documentElement.style.overflow = "";
+          document.querySelector(".brand")?.focus({ preventScroll: true });
+        });
+      })();
+    </script>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <header class="header container">
       <a class="brand" href="#inicio"
