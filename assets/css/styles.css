@@ -1781,6 +1781,40 @@ dialog p {
   .team-card { max-width: 440px; width: 100%; margin-inline: auto; }
   .hero { background-image: linear-gradient(#ffffff66, #ffffff66), url("../images/hero-mobile-pastel.png"); background-size: cover; background-position: center; }
 }
+@media (min-width: 901px) {
+  .hero p { font-size: 17px; }
+  .about p,
+  .section-heading p,
+  .benefit p,
+  .specialty-intro p,
+  .specialty-detail,
+  .split p,
+  .timeline p,
+  .review p,
+  .contact p,
+  .faq summary,
+  .faq details p,
+  .team-card-body p { font-size: 16px; }
+  .check-grid,
+  .contact-line,
+  .contact-line div span,
+  .amenities > div,
+  .button,
+  .specialty-nav a,
+  .specialty-card summary,
+  .payment-badge { font-size: 15px; }
+  .team-card-body li,
+  .review-person strong,
+  .review-person div span,
+  .footer-grid p,
+  .footer-grid a { font-size: 14px; }
+  .eyebrow,
+  .outlined,
+  .timeline .eyebrow { font-size: 11px; }
+  .highlights span,
+  .footer-grid h3,
+  .footer-bottom { font-size: 12px; }
+}
 @media (prefers-reduced-motion: reduce) {
   .header .brand img { animation: logo-pulse 6s ease-in-out infinite; }
   html {
