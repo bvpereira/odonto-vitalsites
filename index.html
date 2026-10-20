@@ -34,7 +34,6 @@
         notice.querySelectorAll("button").forEach((button) => button.addEventListener("click", () => notice.close()));
         notice.addEventListener("close", () => {
           document.documentElement.style.overflow = "";
-          document.querySelector(".brand")?.focus({ preventScroll: true });
         });
       })();
     </script>
