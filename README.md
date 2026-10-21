@@ -37,3 +37,25 @@ Configure as URLs oficiais no objeto `clinic` em `assets/js/main.js`. Até lá, 
 Substitua cada `.placeholder` pela imagem correspondente, preservando o contêiner. Nos comparadores, cada `.comparison-layer` recebe uma imagem de mesmo enquadramento; as camadas `.before` e `.after` já estão sobrepostas e recortadas pelo controle. Use texto alternativo, largura e altura nas imagens. A galeria duplica seu grupo automaticamente para o loop contínuo; altere apenas o primeiro grupo no HTML.
 
 O carrossel pausa ao passar o mouse ou pelo botão. A preferência de movimento reduzido desativa sua animação e permite rolagem manual. Os comparadores aceitam arraste, toque e setas do teclado. Especialidades e perguntas frequentes usam elementos nativos `details`.
+
+
+## Otimização de carregamento
+
+As imagens exibidas usam WebP; os arquivos originais permanecem em `assets/images/` como fontes de edição. Banner, logo e retratos têm variantes responsivas. O banner usa `<picture>`, preload por breakpoint e `fetchpriority="high"`; as fotos abaixo da primeira dobra continuam com `loading="lazy"` e dimensões explícitas.
+
+As fontes DM Sans (400–700) e Playfair Display (500–700) são servidas em WOFF2 pelo próprio site, com `font-display: swap`. Os arquivos incluem o subconjunto latino com acentos do português; as licenças SIL OFL estão em `assets/fonts/`.
+
+O CSS é mantido em `assets/css/styles.css` e incorporado ao HTML para eliminar a requisição que bloqueava a primeira renderização. Depois de alterar os estilos, sincronize o HTML:
+
+```sh
+python scripts/optimize_assets.py
+python scripts/optimize_assets.py --check
+```
+
+Para regenerar as variantes WebP a partir dos originais (Pillow 12.3 ou compatível):
+
+```sh
+python scripts/optimize_assets.py --images
+```
+
+Os arquivos gerados são versionados; o deploy continua estático, sem comando de build.

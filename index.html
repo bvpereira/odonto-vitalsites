@@ -9,13 +9,13 @@
       content="Vital Odontologia. Cuidado acolhedor em implantodontia, ortodontia e clínica geral."
     />
     <meta name="theme-color" content="#0085ad" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/styles.css?v=20261020-desktop-type" />
+    <link rel="preload" as="image" href="assets/images/hero-mobile-pastel-941.webp" imagesrcset="assets/images/hero-mobile-pastel-480.webp 480w, assets/images/hero-mobile-pastel-941.webp 941w" imagesizes="100vw" media="(max-width: 640px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="assets/images/hero-banner-1774.webp" imagesrcset="assets/images/hero-banner-1100.webp 1100w, assets/images/hero-banner-1774.webp 1774w" imagesizes="100vw" media="(min-width: 641px)" fetchpriority="high" />
+    <link rel="preload" as="font" href="assets/fonts/dm-sans-latin.woff2" type="font/woff2" crossorigin />
+    <link rel="preload" as="font" href="assets/fonts/playfair-display-latin.woff2" type="font/woff2" crossorigin />
+    <!-- Generated styles: run python scripts/optimize_assets.py -->
+    <style id="site-styles">@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 400 700; font-display: swap; src: url("assets/fonts/dm-sans-latin.woff2") format("woff2"); } @font-face { font-family: "Playfair Display"; font-style: normal; font-weight: 500 700; font-display: swap; src: url("assets/fonts/playfair-display-latin.woff2") format("woff2"); } :root { --cyan: #08bce5; --blue: #0085ad; --ink: #12191e; --muted: #6d777d; --pale: #f4fafc; --line: #dfe9ed; --dark: #030b10; --serif: "Playfair Display", Georgia, serif; --sans: "DM Sans", sans-serif; --hero-header-height: 130px; } * { box-sizing: border-box; } html { scroll-behavior: smooth; scroll-padding-top: 28px; } body { margin: 0; color: var(--ink); font: 16px/1.68 var(--sans); background: #fff; } a { color: inherit; text-decoration: none; } button, input, summary { font: inherit; } button, a, summary, input { -webkit-tap-highlight-color: transparent; } button, summary { cursor: pointer; } button { border: 0; } img { max-width: 100%; display: block; } h1, h2, h3, p { margin: 0; } h1, h2, h3 { line-height: 1.14; } h1, h2 { font-family: var(--serif); font-weight: 700; letter-spacing: -1.2px; } h1 { font-size: clamp(40px, 4.1vw, 60px); } h2 { font-size: 36px; } h3 { font-family: var(--serif); font-size: 21px; } em { color: var(--blue); font-style: normal; } .hero h1 em { color: transparent; background: linear-gradient( 100deg, #006e9d 0%, #05c8ed 42%, #004f86 78%, #006e9d 100% ); background-size: 100% auto; -webkit-background-clip: text; background-clip: text; animation: none; } @keyframes gradient-flow { to { background-position: 240% center; } } p { color: var(--muted); } p + p { margin-top: 14px; } a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; } .container { width: min(1100px, calc(100% - 48px)); margin-inline: auto; } .section { padding-block: 100px; } .pale { background: var(--pale); } .dark { color: white; background: var(--dark); } .eyebrow { display: block; font-size: 10px; letter-spacing: 2px; line-height: 1.5; font-weight: 700; text-transform: uppercase; color: var(--cyan); margin-bottom: 14px; } .outlined { display: inline-block; border: 1px solid #c4ebf5; border-radius: 5px; padding: 4px 8px; font-size: 9px; letter-spacing: 1.6px; margin-bottom: 18px; } .header { position: relative; z-index: 2; height: var(--hero-header-height); display: flex; align-items: center; } .brand { margin-left: 155px; width: 160px; height: 140px; overflow: hidden; display: grid; place-items: center; } .brand img { width: 160px; height: 160px; object-fit: contain; } .hero { width: 100%; max-width: none; display: grid; grid-template-columns: 1fr 1fr; gap: 58px; align-items: center; min-height: calc(520px + var(--hero-header-height)); margin-top: calc(-1 * var(--hero-header-height)); padding: calc(28px + var(--hero-header-height)) max(24px, calc((100% - 1100px) / 2)) 55px; background-position: center; background-size: cover; background-repeat: no-repeat; } .hero p { font-size: 16px; max-width: 430px; margin-top: 22px; } .actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 24px; } .button { display: inline-flex; justify-content: center; align-items: center; gap: 8px; min-height: 48px; padding: 12px 23px; border-radius: 24px; background: var(--blue); color: #fff; font-size: 13px; font-weight: 600; line-height: 1.4; box-shadow: 0 4px 12px #0085ad18; transition: background 0.2s, transform 0.2s; } .hero .button:first-child, .bright { background: linear-gradient(110deg, #006fa7, #08c4e8, #006fa7); background-size: 220% auto; animation: gradient-flow 5s linear infinite; color: #fff; } .hero .button:first-child:hover, .bright:hover { filter: saturate(1.15) brightness(0.96); } .button:hover { background: #006b90; transform: translateY(-2px); } .outline { border: 1px solid #d7dfe3; background: white; color: var(--ink); box-shadow: none; } .outline:hover { background: var(--pale); } .hero-media { min-height: 410px; } .hero-shape { position: absolute; background: #008bb2; inset: 50px 14px 0 70px; border-radius: 48% 45% 0 0; border: 8px solid #052f40; clip-path: polygon(0 0, 100% 0, 100% 75%, 100% 100%, 0 100%, 12% 75%); } .placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 7px; padding: 24px; color: #648592; background: linear-gradient(135deg, #e8f0f3, #f4f8fa); border: 1px dashed #afc9d3; min-height: 180px; font-size: 12px; } .placeholder strong { font-weight: 500; } .placeholder small { font-size: 10px; opacity: 0.8; } .placeholder > span { font-family: var(--sans); font-size: 30px; font-weight: 400; line-height: 1.4; opacity: 0.6; } .hero-placeholder { position: relative; width: 100%; margin: 10px 35px 0; border-radius: 45% 45% 0 0; background: #e9f3f7eb; min-height: 350px; } .about { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; padding-top: 80px; } .about-frame { padding: 0 0 15px 16px; border-left: 2px solid var(--ink); border-bottom: 2px solid var(--ink); position: relative; } .about-frame:after { content: ""; position: absolute; border-left: 2px solid var(--blue); border-bottom: 2px solid var(--blue); inset: 18px 0 -12px 12px; pointer-events: none; } .about-photo { display: block; width: 100%; height: 470px; object-fit: cover; object-position: center; } .about h2 { margin-bottom: 15px; } .about p { font-size: 15px; } .about-highlight { margin-top: 20px; padding: 16px 18px; border-left: 3px solid var(--cyan); background: #f1fbfd; color: #344b55; font-weight: 500; } .check-grid, .check-list { list-style: none; padding: 0; } .check-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 13px 18px; font-size: 13px; margin: 22px 0; } .check-grid li, .check-list li { position: relative; padding-left: 23px; color: #56656c; } .check-grid li:before, .check-list li:before { content: "✓"; position: absolute; left: 0; top: 3px; border: 1px solid var(--blue); border-radius: 50%; color: var(--blue); font-size: 9px; width: 13px; height: 13px; display: grid; place-items: center; line-height: 1; } .text-link { display: inline-flex; align-items: center; gap: 9px; background: #dff6fc; color: var(--blue); font-size: 11px; border-radius: 4px; padding: 3px 8px; } .section-heading { text-align: center; max-width: 720px; margin: 0 auto 50px; } .section-heading p { font-size: 15px; max-width: 590px; margin: 18px auto 0; } .benefit-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding-top: 22px; } .benefit { text-align: center; position: relative; border: 1px solid #e8edef; background: #fff; padding: 33px 24px 27px; border-radius: 12px; } .round-icon { display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: #dcf7fd; color: #00a9d1; font: 22px/1 var(--sans); } .round-icon img { width: 21px; height: 21px; object-fit: contain; filter: invert(53%) sepia(92%) saturate(1596%) hue-rotate(146deg) brightness(96%) contrast(100%); } .benefit > .round-icon { position: absolute; left: calc(50% - 27px); top: -28px; width: 54px; height: 54px; border: 4px solid var(--pale); } .benefit > .round-icon img { width: 32px; height: 32px; } .benefit h3 { font-size: 18px; margin-bottom: 15px; } .benefit p { font-size: 14px; line-height: 1.8; } .highlights { display: flex; justify-content: center; gap: 90px; text-align: center; margin-top: 50px; } .highlights strong { display: block; color: var(--cyan); font: 700 52px/1.1 var(--serif); font-variant-numeric: lining-nums tabular-nums; font-feature-settings: "lnum" 1, "tnum" 1; } .highlights span { font-size: 10px; color: #8a9ba4; letter-spacing: 1px; } .specialty-nav { display: flex; justify-content: center; gap: 12px; margin: -20px 0 50px; } .specialty-nav a { min-width: 148px; font-size: 13px; font-weight: 600; text-align: center; padding: 11px 18px; border-radius: 20px; border: 1px solid #d7e2e6; background: #fff; color: var(--ink); box-shadow: 0 5px 14px #0b506b10; transition: transform 0.2s, filter 0.2s; } .specialty-nav a.is-active { background: linear-gradient(110deg, #006fa7, #08c4e8, #006fa7); background-size: 220% auto; color: #fff; border-color: transparent; box-shadow: 0 8px 20px #007ca536; transform: translateY(-2px); } .specialty-nav:hover a { background: #fff; color: var(--ink); border-color: #d7e2e6; box-shadow: 0 5px 14px #0b506b10; } .specialty-nav:hover a:hover { background: linear-gradient(110deg, #006fa7, #08c4e8, #006fa7); background-size: 220% auto; color: #fff; border-color: transparent; box-shadow: 0 8px 20px #007ca536; transform: translateY(-2px); } .specialty-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; } .specialty-card { border: 1px solid var(--line); border-radius: 24px; overflow: hidden; box-shadow: 0 12px 26px #0c60800b; scroll-margin-top: 25px; } .specialty-intro { text-align: center; min-height: 236px; padding: 23px 20px 26px; } .specialty-intro .round-icon { width: 61px; height: 61px; } .specialty-intro .round-icon img { width: 36px; height: 36px; } .specialty-intro h3 { font-size: 26px; margin: 15px 0 18px; } .specialty-intro p { font-size: 14px; line-height: 1.6; } .specialty-image { display: block; width: 100%; height: 255px; object-fit: cover; } .specialty-card details { padding: 22px; } .specialty-card summary { display: flex; width: max-content; align-items: center; gap: 12px; margin: 0 auto; background: #daf8fd; border: 1px solid #a7e1ed; color: #0b9ec2; padding: 7px 16px; border-radius: 30px; font-size: 13px; list-style: none; } .specialty-card summary::-webkit-details-marker { display: none; } .opened, details[open] .closed { display: none; } details[open] .opened { display: inline; } .specialty-card summary i { width: 6px; height: 6px; border-right: 1px solid; border-bottom: 1px solid; transform: rotate(45deg); margin-top: -3px; } details[open] summary i { transform: rotate(225deg); margin-top: 3px; } .specialty-detail { padding-top: 20px; font-size: 14px; line-height: 1.7; } .check-list { margin: 18px 0 0; display: grid; gap: 8px; } .check-list li:before { top: 5px; } .split { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; } .split h2 { margin-bottom: 20px; } .split p { font-size: 15px; } .emergency { background: #fff3f4; } .emergency .eyebrow, .emergency em { color: #f12734; } .emergency .button { margin-top: 22px; min-height: 52px; padding-inline: 26px; font-size: 14px; } .emergency-media { position: relative; } .emergency-photo { display: block; width: 100%; height: 320px; object-fit: cover; object-position: center; border-radius: 18px; } .emergency-badge { position: absolute; z-index: 1; top: -30px; right: -26px; width: 116px; height: 116px; object-fit: contain; filter: drop-shadow(0 10px 18px #9e001b30); animation: emergency-pulse 2.4s ease-in-out infinite; transform-origin: center; } .red { background: #e90012; } .red:hover { background: #be0010; } .contact-line { display: flex; align-items: center; gap: 14px; margin-top: 19px; font-size: 14px; } .contact-line .round-icon { width: 30px; height: 30px; font-size: 18px; } .contact-line strong, .contact-line div span { display: block; } .contact-line div span { color: var(--muted); font-size: 13px; } .black { background: #17242b; } .map-frame { height: 350px; border-radius: 12px; overflow: hidden; background: #e7f2ee; box-shadow: 0 8px 24px #28485b12; } .map-frame iframe { display: block; width: 100%; height: 100%; border: 0; } .amenities { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 52px 70px; } .amenities > div { display: flex; align-items: center; flex-direction: column; gap: 9px; background: #fff; border: 1px solid #e5edf0; border-radius: 10px; min-height: 118px; padding: 18px 12px; font-size: 14px; font-weight: 500; } .amenities .round-icon { width: 42px; height: 42px; font-size: 20px; } .amenities .round-icon img { width: 23px; height: 23px; } .spaces-heading { text-align: center; max-width: 720px; margin: 0 auto 25px; } .spaces-heading h3 { font-size: 23px; margin-bottom: 14px; } .spaces-heading p { font-size: 15px; max-width: 850px; margin-inline: auto; } .carousel { overflow: hidden; mask-image: linear-gradient( to right, transparent, #000 2%, #000 98%, transparent ); } .carousel-track { display: flex; width: max-content; animation: marquee 30s linear infinite; } .gallery-group { display: flex; gap: 14px; padding-right: 14px; } .gallery-group img { display: block; width: 210px; height: 200px; object-fit: cover; border-radius: 10px; box-shadow: 0 7px 18px #12384718; } .carousel.is-paused .carousel-track { animation-play-state: paused; } @keyframes marquee { to { transform: translateX(-50%); } } @keyframes emergency-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.055); } } .journey { background-color: var(--dark); background-image: linear-gradient(#ffffff03 1px, transparent 1px), linear-gradient(90deg, #ffffff03 1px, transparent 1px); background-size: 44px 44px; } .dark .section-heading p, .dark p { color: #91a0a9; } .journey .section-heading { margin-bottom: 60px; } .timeline { list-style: none; padding: 0; margin: 0; position: relative; } .timeline:before { content: ""; position: absolute; left: 50%; width: 1px; top: 20px; bottom: 45px; background: #19526a; } .timeline li { position: relative; min-height: 140px; display: flex; align-items: flex-start; } .timeline li > div { width: calc(50% - 55px); text-align: right; } .timeline li:nth-child(even) { justify-content: flex-end; } .timeline li:nth-child(even) > div { text-align: left; } .timeline-icon { position: absolute; left: calc(50% - 22px); top: 0; width: 44px; height: 44px; border: 6px solid #073346; background: #069abe; border-radius: 50%; display: grid; place-items: center; color: #b3f2ff; box-shadow: 0 0 0 5px #0a1e29; font-size: 18px; } .timeline-icon img { width: 20px; height: 20px; object-fit: contain; filter: invert(1); } .timeline h3 { font-size: 22px; margin: 0 0 12px; } .timeline .eyebrow { font-size: 9px; margin-bottom: 7px; } .timeline p { font-size: 14px; line-height: 1.7; } .timeline li:last-child { min-height: 85px; } .insurance { padding-block: 80px; } .insurance-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; } .insurance-grid > div { display: grid; place-items: center; min-height: 96px; border: 1px dashed #dce7ed; border-radius: 10px; padding: 10px; box-shadow: 0 8px 22px #0b5d7b0b; font-size: 11px; color: #889ba4; text-align: center; } .insurance-grid img { display: block; max-width: 100%; width: auto; max-height: 62px; object-fit: contain; } .payment-badge { display: inline-flex; align-items: center; gap: 10px; margin-top: 22px; padding: 10px 15px; border-radius: 999px; background: linear-gradient(110deg, #006f9e, #0abfe2); color: white; font-size: 13px; font-weight: 600; box-shadow: 0 7px 18px #007ca526; } .payment-badge img { width: 21px; height: 21px; object-fit: contain; filter: invert(1); } .results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; } .result-card { overflow: hidden; border-radius: 18px; background: #fff; box-shadow: 0 10px 25px #226c8810; } .comparison { position: relative; height: 385px; overflow: hidden; touch-action: pan-y; cursor: ew-resize; } .comparison-layer { position: absolute; inset: 0; } .comparison-layer > .placeholder, .comparison-layer > img { width: 100%; height: 100%; border: 0; object-fit: cover; } .comparison-layer > span { position: absolute; top: 15px; z-index: 1; font-size: 9px; letter-spacing: 1px; background: #ffffffbc; border-radius: 4px; padding: 4px 7px; color: #405864; } .after > span { right: 12px; } .before > span { left: 12px; } .after .placeholder { background: #c5e7ec; color: #3d7a88; } .location-dialog { width: min(480px, calc(100vw - 24px)); max-width: none; max-height: calc(100dvh - 24px); padding: 0; border: 0; background: #000; overflow: hidden; } .location-dialog video { display: block; width: 100%; height: min(82dvh, 800px); object-fit: contain; } .location-close { position: absolute; z-index: 1; top: 10px; right: 10px; width: 44px; height: 44px; border-radius: 50%; background: #fff; color: #111; font-size: 30px; line-height: 1; box-shadow: 0 2px 12px #0005; } @media (max-width: 640px) { .location-dialog { width: calc(100vw - 16px); max-height: calc(100dvh - 16px); } .location-dialog video { height: calc(100dvh - 16px); } } .before .placeholder { background: #e3e7e9; color: #758590; } .before { clip-path: inset(0 calc(100% - var(--position)) 0 0); } .comparison-handle { position: absolute; inset: 0 auto 0 var(--position); width: 2px; background: #fff; transform: translateX(-1px); pointer-events: none; } .comparison-handle span { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 2px solid #fff; box-shadow: 0 2px 8px #0002; border-radius: 50%; width: 36px; height: 36px; background: #ffffff80; display: grid; place-items: center; color: #47606c; font-size: 22px; white-space: nowrap; } .comparison input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; touch-action: pan-y; } .comparison:focus-within { outline: 3px solid var(--blue); outline-offset: -4px; } .result-caption { padding: 18px; } .result-caption h3 { font: 600 14px/1.4 var(--sans); } .result-caption p { font-size: 10px; margin: 4px 0; } .result-caption > span { color: var(--blue); font-size: 9px; } .results-note { text-align: center; font-size: 10px; margin-top: 25px; } .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; } .review { border: 1px solid var(--line); border-radius: 14px; padding: 24px; box-shadow: 0 8px 22px #17688610; } .quote { color: #76d5ed; font: 40px/1 var(--serif); } .review p { font-size: 14px; min-height: 126px; } .typewriter.is-typing::after { content: ""; display: inline-block; width: 2px; height: 1em; margin-left: 3px; vertical-align: -0.12em; background: var(--cyan); animation: caret-blink 0.65s steps(1) infinite; } @keyframes caret-blink { 50% { opacity: 0; } } .review-person { display: flex; gap: 10px; align-items: center; margin-top: 18px; } .avatar { flex: 0 0 auto; width: 42px; height: 42px; border-radius: 50%; border: 2px solid #d9f2f8; object-fit: cover; object-position: center; box-shadow: 0 4px 12px #075a7618; } .review-person strong { display: block; font-size: 11px; } .review-person div span { font-size: 11px; color: #8a969e; } .contact { text-align: center; background: radial-gradient(ellipse at 20% 45%, #00334a80, transparent 55%), var(--dark); } .contact p { max-width: 820px; margin: 22px auto 0; font-size: 15px; } .contact .actions { justify-content: center; } .bright { background: #05bcdf; } .on-dark { background: #ffffff12; border: 1px solid #ffffff22; } .button-icon { width: 18px; height: 18px; object-fit: contain; filter: invert(1); } .faq { max-width: 770px; } .faq .section-heading { margin-bottom: 30px; } .faq details { border: 1px solid #e1e7ea; border-radius: 10px; margin-bottom: 10px; padding: 0 18px; } .faq summary { position: relative; padding: 15px 24px 15px 0; list-style: none; font-size: 14px; font-weight: 600; } .faq summary::-webkit-details-marker { display: none; } .faq summary:after { content: "+"; position: absolute; right: 0; top: 10px; font-size: 21px; font-weight: 400; color: #8b9aa2; } .faq details[open] summary:after { content: "−"; } .faq details p { font-size: 14px; padding: 0 15px 18px 0; } footer { padding-top: 48px; } .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 70px; padding-bottom: 40px; } .footer-logo { width: 100px; height: 100px; object-fit: contain; filter: invert(1); margin-top: -20px; } .footer-grid p, .footer-grid a { font-size: 11px; color: #8c9ba4; } .footer-grid p + p { margin-top: 8px; } .footer-grid h3 { font: 500 11px/1.5 var(--sans); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; } .footer-grid a { display: block; margin-bottom: 8px; } .footer-bottom { border-top: 1px solid #ffffff10; display: flex; justify-content: space-between; padding-block: 18px; font-size: 9px; color: #758690; } .floating-contact { position: fixed; bottom: 22px; right: 22px; width: 48px; height: 48px; display: grid; place-items: center; border-radius: 50%; background: #20c76b; color: #fff; font-size: 30px; box-shadow: 0 4px 15px #0002; z-index: 10; } .floating-contact img { width: 25px; height: 25px; object-fit: contain; filter: invert(1); } .skip-link { position: fixed; top: -100px; left: 15px; background: #fff; padding: 12px; z-index: 100; } .skip-link:focus { top: 10px; } dialog { border: 1px solid var(--line); border-radius: 20px; padding: 40px; width: min(460px, calc(100% - 40px)); color: var(--ink); box-shadow: 0 20px 80px #0002; } .prototype-dialog { width: min(560px, calc(100% - 32px)); max-height: calc(100dvh - 32px); padding: 48px 32px 32px; background: #fff; } .prototype-dialog h2 { font-size: 30px; line-height: 1.25; } .prototype-dialog p { font-size: 16px; line-height: 1.7; } .prototype-close { position: absolute; top: 10px; right: 10px; width: 44px; height: 44px; border-radius: 50%; background: var(--pale); color: var(--ink); font-size: 30px; line-height: 1; } dialog::backdrop { background: #041b2c80; backdrop-filter: blur(3px); } dialog h2 { font-size: 27px; margin-bottom: 20px; } dialog p { font-size: 14px; margin-bottom: 20px; } .dialog-close { position: absolute; right: 14px; top: 10px; background: none; font-size: 28px; color: #647982; } .before .placeholder { align-items: flex-start; padding-left: 25px; } .after .placeholder { align-items: flex-end; padding-right: 25px; } @media (min-width: 1600px) { :root { --hero-header-height: 158px; } .header { height: var(--hero-header-height); } .hero { min-height: calc(540px + var(--hero-header-height)); } .hero-media { height: 540px; } .section { padding-block: 110px; } .hero h1 { font-size: 62px; } .about { padding-top: 110px; } .about-photo { height: 500px; } .journey { padding-block: 125px; } .timeline li { min-height: 150px; } } @media (max-width: 900px) { :root { --hero-header-height: 105px; } .container { width: calc(100% - 40px); } .section { padding-block: 72px; } h2 { font-size: 30px; } .header { height: var(--hero-header-height); } .brand { margin-left: 65px; width: 130px; height: 120px; } .brand img { width: 130px; height: 130px; } .hero { width: 100%; gap: 25px; } .hero-media { height: 390px; } .hero-placeholder { margin-inline: 15px; } .hero-shape { left: 35px; } .about, .split { gap: 32px; } .about-photo { height: 410px; } .benefit-grid { gap: 12px; } .benefit { padding-inline: 15px; } .benefit h3 { font-size: 16px; } .highlights { gap: 65px; } .highlights strong { font-size: 34px; } .specialty-grid { gap: 15px; } .specialty-intro { padding-inline: 14px; min-height: 235px; } .specialty-intro h3 { font-size: 22px; } .specialty-card details { padding: 17px; } .specialty-image { height: 200px; } .amenities { margin-inline: 0; } .results-grid, .reviews-grid { gap: 15px; } .comparison { height: 315px; } .emergency-badge { right: -10px; } .footer-grid { gap: 30px; } .insurance-grid { gap: 10px; } } @media (max-width: 640px) { :root { --hero-header-height: 120px; } .container { width: calc(100% - 40px); } .section { padding-block: 62px; } h1 { font-size: 43px; letter-spacing: -1.1px; } h2 { font-size: 29px; letter-spacing: -0.8px; } h2 br { display: none; } .header { height: var(--hero-header-height); justify-content: center; } .brand { margin: 0; width: 130px; height: 120px; } .hero { width: 100%; grid-template-columns: 1fr; gap: 25px; min-height: 0; padding: calc(22px + var(--hero-header-height)) 20px 25px; align-content: start; background-color: #fff; background-size: contain; background-position: center bottom; } .hero > .hero-content { max-width: 450px; margin: 0 auto; } .hero h1 { font-size: clamp(30px, 8.8vw, 40px); } .hero p { font-size: 15.5px; margin-top: 16px; } .hero-media { display: none; } .hero-placeholder { min-height: 320px; } .hero-shape { inset: 35px 15px 0 50px; } .actions { gap: 10px; } .hero .actions { justify-content: center; margin-top: 18px; } .button { min-height: 48px; font-size: 13px; } .about, .split { grid-template-columns: 1fr; gap: 38px; } .about-frame { order: 2; margin-right: 12px; } .about > div:last-child { order: 1; } .about-photo { height: 330px; } .about h2 { font-size: 30px; } .about p { font-size: 16px; } .check-grid { grid-template-columns: 1fr; font-size: 14px; } .section-heading { margin-bottom: 38px; } .section-heading p { font-size: 15px; } .benefit-grid { grid-template-columns: 1fr; gap: 35px; } .benefit { padding: 34px 24px 25px; } .benefit h3 { font-size: 18px; } .benefit p { font-size: 15px; } .highlights { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 35px; } .highlights strong { font-size: 42px; } .highlights span { font-size: 10px; letter-spacing: 1px; } .specialty-nav { flex-wrap: wrap; gap: 7px; margin: -12px 0 30px; } .specialty-nav a { min-width: 105px; font-size: 12px; padding: 10px 12px; } .specialty-grid { grid-template-columns: 1fr; gap: 25px; max-width: 390px; margin: auto; } .specialty-intro { min-height: auto; padding: 24px 23px 28px; } .specialty-intro h3 { font-size: 27px; } .specialty-intro p { font-size: 14px; } .specialty-image { height: 258px; } .specialty-card details { padding: 22px; } .specialty-detail { font-size: 14px; } .specialty-card summary { font-size: 14px; } .emergency-media { margin-top: 10px; margin-right: 9px; } .emergency .split { gap: 58px; } .emergency h2 br { display: block; } .emergency .button { display: flex; width: max-content; margin: 22px auto 0; } .emergency-photo { height: 270px; } .emergency-badge { width: 92px; height: 92px; right: -12px; top: -22px; } .split p { font-size: 16px; } .map-frame { height: 290px; } .amenities { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-block: 35px; gap: 12px; } .amenities > div { min-height: 126px; padding-inline: 8px; text-align: center; font-size: 13px; } .gallery-group img { width: 180px; height: 180px; } .timeline:before { left: 22px; } .timeline li, .timeline li:nth-child(even) { justify-content: flex-end; min-height: 0; padding-bottom: 58px; } .timeline li > div, .timeline li:nth-child(even) > div { width: calc(100% - 80px); text-align: left; } .timeline-icon { left: -4px; width: 52px; height: 52px; } .timeline-icon img { width: 24px; height: 24px; } .timeline h3 { font-size: 21px; } .timeline p { font-size: 15px; } .timeline li:last-child { min-height: 0; padding-bottom: 0; } .insurance-grid > div { min-height: 85px; font-size: 10px; } .results-grid, .reviews-grid { grid-template-columns: 1fr; gap: 22px; max-width: 390px; margin-inline: auto; } .comparison { height: 370px; } .review p { min-height: 152px; font-size: 15px; } .result-caption { padding: 20px; } .result-caption h3 { font-size: 16px; } .result-caption p { font-size: 14px; } .result-caption > span { font-size: 10px; } .contact p { font-size: 15px; } .faq summary { font-size: 15px; } .faq details p { font-size: 15px; } .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; } .footer-grid > div:first-child { grid-column: 1/-1; } .footer-logo { width: 110px; height: 100px; } .footer-bottom { gap: 12px; flex-direction: column; padding-bottom: 35px; } .floating-contact { width: 44px; height: 44px; right: 14px; bottom: 14px; } } :root { --hero-header-height: 160px; } .header { justify-content: center; } .header .brand { margin-inline: 0; width: 190px; height: 160px; overflow: visible; } .header .brand img { width: 190px; height: 190px; animation: logo-pulse 3s ease-in-out infinite; } @keyframes logo-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.065); } } .hero { grid-template-columns: 1fr; align-items: start; align-content: start; padding-top: calc(var(--hero-header-height) + 8px); text-align: center; background-size: cover; background-position: center; } .hero > .hero-content { width: 100%; max-width: 780px; margin-inline: auto; } .hero p { max-width: 610px; margin-inline: auto; } .hero .actions { justify-content: center; } .hero-media { display: none; } @media (min-width: 641px) { .header .brand { width: 271.7px; position: relative; top: 41px; } .header .brand img { width: 271.7px; height: 271.7px; max-width: none; } .hero { min-height: calc((520px + var(--hero-header-height)) * 1.15); align-content: end; padding-top: calc(var(--hero-header-height) + 40px); padding-bottom: 100px; } } @media (min-width: 1600px) { .hero { min-height: calc((540px + var(--hero-header-height)) * 1.15); } } .team-section { padding-top: 0; } .team-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; } .team-card { overflow: hidden; background: #fff; border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 10px 36px #063c4e08; } .team-card-heading { padding: 24px; text-align: center; } .team-card-heading h3 { font-size: 25px; margin-bottom: 6px; } .team-photo { position: relative; } .team-cro { position: absolute; right: 14px; bottom: 14px; display: inline-block; padding: 6px 12px; border-radius: 20px; background: #007da8; color: #fff; font-size: 13px; font-weight: 600; box-shadow: 0 2px 10px #0002; } .team-photo > img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1.04; object-fit: cover; } .team-card-body { padding: 24px; } .team-card-body p { font-size: 15px; } .team-card-body ul { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 20px 0 0; } .team-card-body li { padding: 6px 10px; border-radius: 8px; background: var(--pale); color: #006b90; font-size: 12px; font-weight: 600; } .team-card-body li::before { content: "✓"; margin-right: 6px; font-weight: 700; } @media (max-width: 900px) { .team-grid { gap: 14px; } .team-card-heading, .team-card-body { padding: 18px; } } @media (max-width: 640px) { :root { --hero-header-height: 145px; } .header .brand { width: 160px; height: 145px; } .header .brand img { width: 160px; height: 160px; } .team-card-body p { font-size: 16px; } .team-grid { grid-template-columns: 1fr; gap: 24px; } .team-card { max-width: 440px; width: 100%; margin-inline: auto; } .hero-background img { opacity: 0.6; } } @media (min-width: 901px) { .hero p { font-size: 17px; } .about p, .section-heading p, .benefit p, .specialty-intro p, .specialty-detail, .split p, .timeline p, .review p, .contact p, .faq summary, .faq details p, .team-card-body p { font-size: 16px; } .check-grid, .contact-line, .contact-line div span, .amenities > div, .button, .specialty-nav a, .specialty-card summary, .payment-badge { font-size: 15px; } .team-card-body li, .review-person strong, .review-person div span, .footer-grid p, .footer-grid a { font-size: 14px; } .eyebrow, .outlined, .timeline .eyebrow { font-size: 11px; } .highlights span, .footer-grid h3, .footer-bottom { font-size: 12px; } } @media (prefers-reduced-motion: reduce) { .header .brand img { animation: logo-pulse 6s ease-in-out infinite; } html { scroll-behavior: auto; } .carousel-track { animation-duration: 55s; } .hero h1 em, .hero .button:first-child, .bright { animation-duration: 9s; } } .hero { position: relative; isolation: isolate; background-color: #fff; } .hero-background { position: absolute; inset: 0; z-index: -1; pointer-events: none; } .hero-background img { width: 100%; height: 100%; object-fit: cover; object-position: center; }</style>
+    <!-- End generated styles -->
     <script src="assets/js/main.js?v=20261001-video" defer></script>
   </head>
   <body>
@@ -41,15 +41,19 @@
     <header class="header container">
       <a class="brand" href="#inicio"
         ><img
-          src="assets/images/logo.png"
+          src="assets/images/logo-280.webp" srcset="assets/images/logo-280.webp 280w, assets/images/logo-560.webp 560w" sizes="(max-width: 640px) 160px, 272px"
           alt="Vital Odontologia — início"
-          width="160"
-          height="160"
-      /></a>
+          width="280"
+          height="280"
+        /></a>
     </header>
     <main id="conteudo">
       <section class="hero container" id="inicio">
-        <div>
+        <picture class="hero-background" aria-hidden="true">
+          <source media="(max-width: 640px)" srcset="assets/images/hero-mobile-pastel-480.webp 480w, assets/images/hero-mobile-pastel-941.webp 941w" sizes="100vw" width="941" height="1672" />
+          <img src="assets/images/hero-banner-1774.webp" srcset="assets/images/hero-banner-1100.webp 1100w, assets/images/hero-banner-1774.webp 1774w" sizes="100vw" alt="" width="1774" height="887" fetchpriority="high" loading="eager" />
+        </picture>
+        <div class="hero-content">
           <span class="eyebrow outlined">Odontologia em Rio das Ostras</span>
           <h1>
             Cuidado que <em>transforma<br />sorrisos</em> e devolve a sua
@@ -73,9 +77,11 @@
         <div class="about-frame">
           <img
             class="about-photo"
-            src="assets/images/sobre-nos-consultorio.jpg"
+            src="assets/images/sobre-nos-consultorio.webp"
             alt="Atendimento odontológico em um consultório iluminado"
             loading="lazy"
+            width="960"
+            height="576"
           />
         </div>
         <div>
@@ -114,7 +120,7 @@
         <div class="team-grid">
           <article class="team-card">
             <div class="team-card-heading"><h3>Dr. Pedro Vital</h3></div>
-            <div class="team-photo"><img src="assets/images/dentista-1.png" alt="Retrato ilustrativo de Pedro Vital" loading="lazy" width="711" height="724" /><span class="team-cro">CRO-RJ 12345</span></div>
+            <div class="team-photo"><img src="assets/images/dentista-1-711.webp" srcset="assets/images/dentista-1-360.webp 360w, assets/images/dentista-1-711.webp 711w" sizes="(max-width: 640px) min(440px, calc(100vw - 48px)), (max-width: 900px) calc((100vw - 76px) / 3), 351px" alt="Retrato ilustrativo de Pedro Vital" loading="lazy" width="711" height="724" /><span class="team-cro">CRO-RJ 12345</span></div>
             <div class="team-card-body">
               <p>Fundador da Vital Odontologia, Pedro acredita que um novo sorriso começa com uma boa conversa. Une planejamento cuidadoso e um atendimento próximo para ajudar cada paciente a recuperar a confiança ao sorrir.</p>
               <ul aria-label="Especializações de Pedro Vital"><li>Implantodontia</li><li>Prótese dentária</li><li>Reabilitação oral</li></ul>
@@ -122,7 +128,7 @@
           </article>
           <article class="team-card">
             <div class="team-card-heading"><h3>Dra. Camila Duarte</h3></div>
-            <div class="team-photo"><img src="assets/images/dentista-2.png" alt="Retrato ilustrativo de Camila Duarte" loading="lazy" width="713" height="724" /><span class="team-cro">CRO-RJ 12345</span></div>
+            <div class="team-photo"><img src="assets/images/dentista-2-713.webp" srcset="assets/images/dentista-2-360.webp 360w, assets/images/dentista-2-713.webp 713w" sizes="(max-width: 640px) min(440px, calc(100vw - 48px)), (max-width: 900px) calc((100vw - 76px) / 3), 351px" alt="Retrato ilustrativo de Camila Duarte" loading="lazy" width="713" height="724" /><span class="team-cro">CRO-RJ 12345</span></div>
             <div class="team-card-body">
               <p>Com escuta atenta e um olhar delicado para cada detalhe, Camila acompanha seus pacientes em todas as fases do tratamento. Seu cuidado combina harmonia do sorriso, conforto e respeito ao ritmo de cada pessoa.</p>
               <ul aria-label="Especializações de Camila Duarte"><li>Ortodontia</li><li>Alinhadores estéticos</li><li>Ortopedia facial</li></ul>
@@ -130,7 +136,7 @@
           </article>
           <article class="team-card">
             <div class="team-card-heading"><h3>Dr. Rafael Mendes</h3></div>
-            <div class="team-photo"><img src="assets/images/dentista-3.png" alt="Retrato ilustrativo de Rafael Mendes" loading="lazy" width="703" height="732" /><span class="team-cro">CRO-RJ 12345</span></div>
+            <div class="team-photo"><img src="assets/images/dentista-3-703.webp" srcset="assets/images/dentista-3-360.webp 360w, assets/images/dentista-3-703.webp 703w" sizes="(max-width: 640px) min(440px, calc(100vw - 48px)), (max-width: 900px) calc((100vw - 76px) / 3), 351px" alt="Retrato ilustrativo de Rafael Mendes" loading="lazy" width="703" height="724" /><span class="team-cro">CRO-RJ 12345</span></div>
             <div class="team-card-body">
               <p>Rafael valoriza a prevenção e faz questão de explicar cada etapa com clareza. Com uma abordagem tranquila e acolhedora, ajuda crianças e adultos a construir hábitos saudáveis e a cuidar do sorriso com segurança.</p>
               <ul aria-label="Especializações de Rafael Mendes"><li>Clínica geral</li><li>Endodontia</li><li>Dentística restauradora</li></ul>
@@ -244,9 +250,11 @@
             </div>
             <img
               class="specialty-image"
-              src="assets/images/especialidade-implantodontia.jpg"
+              src="assets/images/especialidade-implantodontia.webp"
               alt="Demonstração de implante dentário"
               loading="lazy"
+              width="800"
+              height="480"
             />
             <details>
               <summary>
@@ -289,6 +297,8 @@
               src="assets/images/especialidade-ortodontia.webp"
               alt="Procedimento odontológico com aparelho ortodôntico"
               loading="lazy"
+              width="1024"
+              height="867"
             />
             <details>
               <summary>
@@ -328,9 +338,11 @@
             </div>
             <img
               class="specialty-image"
-              src="assets/images/especialidade-clinica-geral.jpg"
+              src="assets/images/especialidade-clinica-geral.webp"
               alt="Exame odontológico de clínica geral"
               loading="lazy"
+              width="960"
+              height="640"
             />
             <details>
               <summary>
@@ -375,15 +387,19 @@
           <div class="emergency-media">
             <img
               class="emergency-photo"
-              src="assets/images/sos-dor-de-dente.jpg"
+              src="assets/images/sos-dor-de-dente.webp"
               alt="Paciente com dor de dente"
               loading="lazy"
+              width="524"
+              height="400"
             />
             <img
               class="emergency-badge"
-              src="assets/images/sos-24-horas.png"
+              src="assets/images/sos-24-horas.webp"
               alt="Atendimento 24 horas"
               loading="lazy"
+              width="640"
+              height="632"
             />
           </div>
         </div>
@@ -480,16 +496,16 @@
           <div class="carousel" aria-label="Galeria dos ambientes">
             <div class="carousel-track">
               <div class="gallery-group">
-                <img src="assets/images/consultorio-01.webp" alt="Consultório odontológico 1" loading="lazy" />
-                <img src="assets/images/consultorio-02.jpg" alt="Consultório odontológico 2" loading="lazy" />
-                <img src="assets/images/consultorio-03.jpg" alt="Consultório odontológico 3" loading="lazy" />
-                <img src="assets/images/consultorio-04.jpg" alt="Consultório odontológico 4" loading="lazy" />
-                <img src="assets/images/consultorio-05.jfif" alt="Consultório odontológico 5" loading="lazy" />
-                <img src="assets/images/consultorio-06.jfif" alt="Consultório odontológico 6" loading="lazy" />
-                <img src="assets/images/consultorio-07.jpg" alt="Consultório odontológico 7" loading="lazy" />
-                <img src="assets/images/consultorio-08.jfif" alt="Consultório odontológico 8" loading="lazy" />
-                <img src="assets/images/consultorio-09.jfif" alt="Consultório odontológico 9" loading="lazy" />
-                <img src="assets/images/consultorio-10.jpeg" alt="Consultório odontológico 10" loading="lazy" />
+                <img src="assets/images/consultorio-01.webp" alt="Consultório odontológico 1" loading="lazy" width="1080" height="819" />
+                <img src="assets/images/consultorio-02.webp" alt="Consultório odontológico 2" loading="lazy" width="720" height="480" />
+                <img src="assets/images/consultorio-03.webp" alt="Consultório odontológico 3" loading="lazy" width="720" height="480" />
+                <img src="assets/images/consultorio-04.webp" alt="Consultório odontológico 4" loading="lazy" width="720" height="468" />
+                <img src="assets/images/consultorio-05.webp" alt="Consultório odontológico 5" loading="lazy" width="546" height="366" />
+                <img src="assets/images/consultorio-06.webp" alt="Consultório odontológico 6" loading="lazy" width="597" height="514" />
+                <img src="assets/images/consultorio-07.webp" alt="Consultório odontológico 7" loading="lazy" width="447" height="300" />
+                <img src="assets/images/consultorio-08.webp" alt="Consultório odontológico 8" loading="lazy" width="709" height="432" />
+                <img src="assets/images/consultorio-09.webp" alt="Consultório odontológico 9" loading="lazy" width="640" height="480" />
+                <img src="assets/images/consultorio-10.webp" alt="Consultório odontológico 10" loading="lazy" width="720" height="540" />
               </div>
             </div>
           </div>
@@ -601,12 +617,12 @@
           </div>
         </div>
         <div class="insurance-grid" aria-label="Convênios aceitos">
-          <div><img src="assets/images/convenio-amil.png" alt="Amil" loading="lazy" /></div>
-          <div><img src="assets/images/convenio-sulamerica.png" alt="SulAmérica" loading="lazy" /></div>
-          <div><img src="assets/images/convenio-hapvida.png" alt="Hapvida" loading="lazy" /></div>
-          <div><img src="assets/images/convenio-unimed.png" alt="Unimed" loading="lazy" /></div>
-          <div><img src="assets/images/convenio-qualicorp.png" alt="Qualicorp" loading="lazy" /></div>
-          <div><img src="assets/images/convenio-bradesco-saude.png" alt="Bradesco Saúde" loading="lazy" /></div>
+          <div><img src="assets/images/convenio-amil.webp" alt="Amil" loading="lazy" width="192" height="88" /></div>
+          <div><img src="assets/images/convenio-sulamerica.webp" alt="SulAmérica" loading="lazy" width="201" height="98" /></div>
+          <div><img src="assets/images/convenio-hapvida.webp" alt="Hapvida" loading="lazy" width="191" height="81" /></div>
+          <div><img src="assets/images/convenio-unimed.webp" alt="Unimed" loading="lazy" width="197" height="93" /></div>
+          <div><img src="assets/images/convenio-qualicorp.webp" alt="Qualicorp" loading="lazy" width="204" height="102" /></div>
+          <div><img src="assets/images/convenio-bradesco-saude.webp" alt="Bradesco Saúde" loading="lazy" width="300" height="153" /></div>
         </div>
       </section>
       <section class="section pale" id="resultados">
@@ -630,11 +646,11 @@
               <div class="comparison" style="--position: 50%">
                 <div class="comparison-layer after">
                   <span>DEPOIS</span>
-                  <img src="assets/images/resultado-depois-1.jpg" alt="Resultado depois da reabilitação do sorriso" loading="lazy" />
+                  <img src="assets/images/resultado-depois-1.webp" alt="Resultado depois da reabilitação do sorriso" loading="lazy" width="488" height="549" />
                 </div>
                 <div class="comparison-layer before">
                   <span>ANTES</span>
-                  <img src="assets/images/resultado-antes-1.jpg" alt="Situação antes da reabilitação do sorriso" loading="lazy" />
+                  <img src="assets/images/resultado-antes-1.webp" alt="Situação antes da reabilitação do sorriso" loading="lazy" width="485" height="549" />
                 </div>
                 <div class="comparison-handle" aria-hidden="true">
                   <span>‹ ›</span>
@@ -657,11 +673,11 @@
               <div class="comparison" style="--position: 50%">
                 <div class="comparison-layer after">
                   <span>DEPOIS</span>
-                  <img src="assets/images/resultado-depois-2.jpg" alt="Resultado depois do alinhamento dental" loading="lazy" />
+                  <img src="assets/images/resultado-depois-2.webp" alt="Resultado depois do alinhamento dental" loading="lazy" width="960" height="1008" />
                 </div>
                 <div class="comparison-layer before">
                   <span>ANTES</span>
-                  <img src="assets/images/resultado-antes-2.jpg" alt="Situação antes do alinhamento dental" loading="lazy" />
+                  <img src="assets/images/resultado-antes-2.webp" alt="Situação antes do alinhamento dental" loading="lazy" width="885" height="1080" />
                 </div>
                 <div class="comparison-handle" aria-hidden="true">
                   <span>‹ ›</span>
@@ -684,11 +700,11 @@
               <div class="comparison" style="--position: 50%">
                 <div class="comparison-layer after">
                   <span>DEPOIS</span>
-                  <img src="assets/images/resultado-depois-3.jpg" alt="Resultado depois do tratamento estético" loading="lazy" />
+                  <img src="assets/images/resultado-depois-3.webp" alt="Resultado depois do tratamento estético" loading="lazy" width="319" height="475" />
                 </div>
                 <div class="comparison-layer before">
                   <span>ANTES</span>
-                  <img src="assets/images/resultado-antes-3.jpg" alt="Situação antes do tratamento estético" loading="lazy" />
+                  <img src="assets/images/resultado-antes-3.webp" alt="Situação antes do tratamento estético" loading="lazy" width="316" height="477" />
                 </div>
                 <div class="comparison-handle" aria-hidden="true">
                   <span>‹ ›</span>
@@ -733,9 +749,11 @@
             <div class="review-person">
               <img
                 class="avatar"
-                src="assets/images/depoimento-mariana.jpg"
+                src="assets/images/depoimento-mariana.webp"
                 alt="Mariana Alves"
                 loading="lazy"
+                width="96"
+                height="95"
               />
               <div>
                 <strong>Mariana Alves</strong><span>Rio das Ostras / RJ</span>
@@ -755,9 +773,11 @@
             <div class="review-person">
               <img
                 class="avatar"
-                src="assets/images/depoimento-ricardo.jpg"
+                src="assets/images/depoimento-ricardo.webp"
                 alt="Ricardo Menezes"
                 loading="lazy"
+                width="96"
+                height="95"
               />
               <div>
                 <strong>Ricardo Menezes</strong><span>Rio das Ostras / RJ</span>
@@ -777,9 +797,11 @@
             <div class="review-person">
               <img
                 class="avatar"
-                src="assets/images/depoimento-juliana.jpg"
+                src="assets/images/depoimento-juliana.webp"
                 alt="Juliana Ferreira"
                 loading="lazy"
+                width="96"
+                height="97"
               />
               <div>
                 <strong>Juliana Ferreira</strong
@@ -884,10 +906,10 @@
         <div>
           <img
             class="footer-logo"
-            src="assets/images/logo.png"
+            src="assets/images/logo-280.webp" srcset="assets/images/logo-280.webp 280w, assets/images/logo-560.webp 560w" sizes="110px"
             alt="Vital Odontologia"
-            width="120"
-            height="120"
+            width="280"
+            height="280"
           />
           <p>
             Cuidado que transforma sorrisos.<br />Uma odontologia próxima,
